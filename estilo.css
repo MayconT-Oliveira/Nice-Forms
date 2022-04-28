@@ -1,0 +1,88 @@
+﻿body
+{
+    background-color: #222;
+}
+
+img
+{
+    width:5%;
+    margin:-5% 1% 2% 37%;
+}
+
+form
+{
+    width:80%;
+    margin-left: 10%;
+    border: 0.5vw solid #f13434;
+    border-radius: 5%;
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+    background:linear-gradient(to bottom, #75160f, #a80aa8);
+}
+
+table
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1
+{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 3px #222;
+    margin-bottom: 0;
+}
+
+input, textarea, select
+{
+    border-radius: 16px;
+    font-size: 120%;
+    padding:3px;
+    border: 0.2vw solid #f13434;
+    border-bottom-color:#991006;
+    border-right-color:#991006;
+    color:#222;
+}
+
+input:hover, textarea:hover, select:hover
+{
+    border: 0.2vw solid #991006;
+    border-bottom-color:#f13434;
+    border-right-color:#f13434;
+}
+
+.direita
+{
+    text-align: right;
+}
+
+.centro
+{
+    text-align: center;
+}
+
+#comentario
+{
+    resize: none;
+    font-size: 150%;
+    width:150%;
+}
+.curso
+{
+    font-size: 130%;
+}
+#cidade, #email
+{
+    width:100%
+}
+
+#nome
+{
+    width:150%
+}
+#botao
+{
+    margin:1vw 1vw 1vw 2vw;
+}

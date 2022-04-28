@@ -1,0 +1,142 @@
+﻿<!doctype HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Maycon"/>
+		<title>Nice Forms</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="shortcut icon" href="forms.png" type="image/x-icon">
+	</head>
+	<body>
+		<form id="formulario" method="post" action="mailto:maycon.oliveira150300@gmail.com">
+			<table> <h1>Nice Forms</h1> <img src="forms.png"/>
+				<tr>
+					<td class="direita">
+						<h3 for="nome">Nome Completo: </h3>
+					</td>
+					<td>
+						<input type="text" name="nome" id="nome" maxlength="35" placeholder="Digite o nome completo" required autofocus/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="senha">Senha: </h3>
+					</td>
+					<td>
+						<input type="password" name="senha" id="senha" maxlength="15" placeholder="Digite a senha"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="sexo">Sexo: </h3>
+					</td>
+					<td>
+						<input type="radio" name="sexo" id="sexo_fem" value="F"/>Feminino
+						<input type="radio" name="sexo"id="sexo_mas" value="M" checked/>Masculino
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="datanasc">Data de Nascimento: </h3>
+					</td>
+					<td>
+						<input type="date" name="datanasc" id="datanasc"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="email">E-mail: </h3>
+					</td>
+					<td>
+						<input type="email" name="email" id="email" maxlength="30" placeholder="Digite o email"required/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="cidade">Cidade: </h3>
+					</td>
+					<td>
+						<input type="text" name="cidade" id="cidade" value="São Paulo" maxlength="35"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="UF">UF: </h3>
+					</td>
+					<td>
+						<select name="UF" id="UF"> 
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SE">Sergipe</option>
+							<option value="SP" selected>São Paulo</option>
+							<option value="TO">Tocantins</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="telefone">Telefone: </h3>
+					</td>
+					<td>
+						<input type="tel" name="telefone" id="telefone" placeholder="(000) 00000-0000"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita" rowspan="3">
+						<h3 for="curso">Cursos: </h3>
+					</td>
+					<td class="curso">
+						<input type="checkbox" name="curso" id="adm" /> Administração
+					</td>
+				</tr>
+				<tr>	
+					<td class="curso">
+						<input type="checkbox" name="curso" id="log" /> Logística
+					</td>
+				</tr>
+				<tr>	
+					<td class="curso">
+						<input type="checkbox" name="curso" id="rh" /> Recursos Humanos
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="comentario" >Deixe seu Comentário: </h3>
+					</td>
+					<td>
+						<textarea name="comentario" id="comentario" cols="30" rows="4" placeholder="Digite aqui..." ></textarea>
+					</td>
+				</tr>
+				<tr>
+					
+					<td colspan="2" class="centro">
+						<input type="submit" value="Enviar" id="botao"/>
+						<input type="reset" value="Limpar"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
