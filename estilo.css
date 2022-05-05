@@ -1,18 +1,18 @@
-﻿body
+body
 {
     background-color: #222;
 }
 
 img
 {
-    width:5%;
-    margin:-5% 1% 2% 37%;
+    width:3vw;
+    margin: -3.35vw 1% 2vw 38%;
 }
 
 form
 {
-    width:80%;
-    margin: 2% 0 2% 10%;
+    width:90%;
+    margin: 2% 0 2% 5%;
     border: 0.5vw solid #f13434;
     border-radius: 5%;
     font-size: 80%;
@@ -21,6 +21,10 @@ form
     background:linear-gradient(to bottom, #75160f, #a80aa8);
 }
 
+td
+{
+    width: 66%;
+}
 table
 {
     margin-left: 10%;
@@ -30,12 +34,24 @@ table
 h1
 {
     text-align: center;
+    font-size: 3vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 2px 2px 3px #222;
     margin-bottom: 0;
 }
 
-input, textarea, select
+h2
+{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px #222;
+    margin-bottom: 2vw;
+    margin-left: -2vw;
+    margin-top: -1vw;
+}
+
+input, textarea
 {
     border-radius: 16px;
     font-size: 120%;
@@ -46,7 +62,25 @@ input, textarea, select
     color:#222;
 }
 
-input:hover, textarea:hover, select:hover
+input:hover, textarea:hover
+{
+    border: 0.2vw solid #991006;
+    border-bottom-color:#f13434;
+    border-right-color:#f13434;
+}
+
+select
+{
+    border-radius: 16px;
+    font-size: 80%;
+    padding:3px;
+    border: 0.2vw solid #f13434;
+    border-bottom-color:#991006;
+    border-right-color:#991006;
+    color:#222;
+}
+
+select:hover
 {
     border: 0.2vw solid #991006;
     border-bottom-color:#f13434;
@@ -56,6 +90,7 @@ input:hover, textarea:hover, select:hover
 .direita
 {
     text-align: right;
+    width: 33%
 }
 
 .centro
@@ -63,17 +98,21 @@ input:hover, textarea:hover, select:hover
     text-align: center;
 }
 
-#comentario
+#descricao
 {
     resize: none;
     font-size: 150%;
     width:150%;
 }
+#text
+{
+    font-size: 100%;
+}
 .curso
 {
     font-size: 130%;
 }
-#cidade, #email
+#site, #desen
 {
     width:100%
 }
@@ -85,4 +124,9 @@ input:hover, textarea:hover, select:hover
 #botao
 {
     margin:1vw 1vw 1vw 2vw;
+}
+
+#logo
+{
+    background-color: #fff;
 }
