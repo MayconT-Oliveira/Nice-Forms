@@ -1,4 +1,4 @@
-﻿<!doctype HTML>
+<!doctype HTML>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8"/>
@@ -8,125 +8,308 @@
 		<link rel="shortcut icon" href="forms.png" type="image/x-icon">
 	</head>
 	<body>
-		<form id="formulario" method="post" action="mailto:maycon.oliveira150300@gmail.com">
+		<form id="formulario" method="post" action="mailto:maycon.oliveira150300@gmail.com" enctype="text/plain">
 			<table> <h1>Nice Forms</h1> <img src="forms.png"/>
+				<h2>O Formulário para seu Jogo</h2>
 				<tr>
 					<td class="direita">
-						<h3 for="nome">Nome Completo: </h3>
+						<h3 for="nome">Nome do Jogo: </h3>
 					</td>
 					<td>
-						<input type="text" name="nome" id="nome" maxlength="35" placeholder="Digite o nome completo" required autofocus/>
+						<input type="text" name="nome" id="nome" maxlength="50" placeholder="Digite o nome do Jogo" required autofocus/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="senha">Senha: </h3>
+						<h3 for="desen">Desenvolvedora: </h3>
 					</td>
 					<td>
-						<input type="password" name="senha" id="senha" maxlength="15" placeholder="Digite a senha"/>
+						<input type="text" name="desen" id="desen" maxlength="30" placeholder="Digite o nome da Desenvolvedora"/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="sexo">Sexo: </h3>
+						<h3 for="logo">Logo do jogo:</h3>
 					</td>
 					<td>
-						<input type="radio" name="sexo" id="sexo_fem" value="F"/>Feminino
-						<input type="radio" name="sexo"id="sexo_mas" value="M" checked/>Masculino
+						<input type="file" name="logo" id="logo" required/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="datanasc">Data de Nascimento: </h3>
+						<h3 for="datalanc">Data de Lançamento: </h3>
 					</td>
 					<td>
-						<input type="date" name="datanasc" id="datanasc"/>
+						<input type="date" name="datalanc" id="datalanc"/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="email">E-mail: </h3>
+						<h3 for="site">Site: </h3>
 					</td>
 					<td>
-						<input type="email" name="email" id="email" maxlength="30" placeholder="Digite o email"required/>
+						<input type="url" name="site" id="site" maxlength="50" placeholder="Digite o site" required/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="cidade">Cidade: </h3>
+						<h3 for="tamanho">Tamanho: </h3>
 					</td>
 					<td>
-						<input type="text" name="cidade" id="cidade" value="São Paulo" maxlength="35"/>
+						<input type="text" name="tamanho" id="tamanho" placeholder="Digite o tamanho do jogo" />
 					</td>
 				</tr>
+				
 				<tr>
 					<td class="direita">
-						<h3 for="UF">UF: </h3>
+						<h3 for="valor">Preço: </h3>
 					</td>
 					<td>
-						<select name="UF" id="UF"> 
-							<option value="AC">Acre</option>
-							<option value="AL">Alagoas</option>
-							<option value="AP">Amapá</option>
-							<option value="AM">Amazonas</option>
-							<option value="BA">Bahia</option>
-							<option value="CE">Ceará</option>
-							<option value="DF">Distrito Federal</option>
-							<option value="ES">Espírito Santo</option>
-							<option value="GO">Goiás</option>
-							<option value="MA">Maranhão</option>
-							<option value="MT">Mato Grosso</option>
-							<option value="MS">Mato Grosso do Sul</option>
-							<option value="MG">Minas Gerais</option>
-							<option value="PA">Pará</option>
-							<option value="PB">Paraíba</option>
-							<option value="PR">Paraná</option>
-							<option value="PE">Pernambuco</option>
-							<option value="PI">Piauí</option>
-							<option value="RJ">Rio de Janeiro</option>
-							<option value="RN">Rio Grande do Norte</option>
-							<option value="RS">Rio Grande do Sul</option>
-							<option value="RO">Rondônia</option>
-							<option value="RR">Roraima</option>
-							<option value="SC">Santa Catarina</option>
-							<option value="SE">Sergipe</option>
-							<option value="SP" selected>São Paulo</option>
-							<option value="TO">Tocantins</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td class="direita">
-						<h3 for="telefone">Telefone: </h3>
-					</td>
-					<td>
-						<input type="tel" name="telefone" id="telefone" placeholder="(000) 00000-0000"/>
+						<input type="number" step="0.01" name="valor" placeholder="00.00" id="valor" required/>
 					</td>
 				</tr>
 				<tr>
 					<td class="direita" rowspan="3">
-						<h3 for="curso">Cursos: </h3>
+						<h3 for="categoria">Categoria: </h3>
 					</td>
 					<td class="curso">
-						<input type="checkbox" name="curso" id="adm" /> Administração
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
 					</td>
 				</tr>
 				<tr>	
 					<td class="curso">
-						<input type="checkbox" name="curso" id="log" /> Logística
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
 					</td>
 				</tr>
 				<tr>	
 					<td class="curso">
-						<input type="checkbox" name="curso" id="rh" /> Recursos Humanos
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
+					</td>
+				</tr>
+				<tr>	
+					<td colspan="2">
+					</td>
+				</tr>
+				<tr>	
+					<td colspan="2">
 					</td>
 				</tr>
 				<tr>
 					<td class="direita">
-						<h3 for="comentario" >Deixe seu Comentário: </h3>
+						<h3 for="descricao" >Descrição do jogo: </h3>
 					</td>
 					<td>
-						<textarea name="comentario" id="comentario" cols="30" rows="4" placeholder="Digite aqui..." ></textarea>
+						<textarea name="descricao" id="descricao" cols="30" rows="4" placeholder="Digite aqui..." ></textarea>
+					</td>
+				</tr>
+				<tr>
+					
+					<td colspan="2" class="centro">
+						<input type="submit" value="Enviar" id="botao"/>
+						<input type="reset" value="Limpar"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html><!doctype HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Maycon"/>
+		<title>Nice Forms</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="shortcut icon" href="forms.png" type="image/x-icon">
+	</head>
+	<body>
+		<form id="formulario" method="post" action="mailto:maycon.oliveira150300@gmail.com" enctype="text/plain">
+			<table> <h1>Nice Forms</h1> <img src="forms.png"/>
+				<h2>O Formulário para seu Jogo</h2>
+				<tr>
+					<td class="direita">
+						<h3 for="nome">Nome do Jogo: </h3>
+					</td>
+					<td>
+						<input type="text" name="nome" id="nome" maxlength="50" placeholder="Digite o nome do Jogo" required autofocus/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="desen">Desenvolvedora: </h3>
+					</td>
+					<td>
+						<input type="text" name="desen" id="desen" maxlength="30" placeholder="Digite o nome da Desenvolvedora"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="logo">Logo do jogo:</h3>
+					</td>
+					<td>
+						<input type="file" name="logo" id="logo" required/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="datalanc">Data de Lançamento: </h3>
+					</td>
+					<td>
+						<input type="date" name="datalanc" id="datalanc"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="site">Site: </h3>
+					</td>
+					<td>
+						<input type="url" name="site" id="site" maxlength="50" placeholder="Digite o site" required/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="tamanho">Tamanho: </h3>
+					</td>
+					<td>
+						<input type="text" name="tamanho" id="tamanho" placeholder="Digite o tamanho do jogo" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="direita">
+						<h3 for="valor">Preço: </h3>
+					</td>
+					<td>
+						<input type="number" step="0.01" name="valor" placeholder="00.00" id="valor" required/>
+					</td>
+				</tr>
+				<tr>
+					<td class="direita" rowspan="3">
+						<h3 for="categoria">Categoria: </h3>
+					</td>
+					<td class="curso">
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
+					</td>
+				</tr>
+				<tr>	
+					<td class="curso">
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
+					</td>
+				</tr>
+				<tr>	
+					<td class="curso">
+						<input type="checkbox" name="categoria"> 
+							<select name="categoria" id="categoria"> 
+								<option value="ACA">Ação</option>
+								<option value="AVE">Aventura</option>
+								<option value="CAS">Casual</option>
+								<option value="CON">Contrução</option>
+								<option value="ESP">Esporte</option>
+								<option value="EST">Estrátegia</option>
+								<option value="GER">Gerenciamento</option>
+								<option value="PUZ">Puzzle</option>
+								<option value="RPG">RPG</option>
+								<option value="SAN">Sandbox</option>
+								<option value="SIM">Simulação</option>
+								<option value="SOB">Sobrevivencia</option>
+								<option value="TER">Terror</option>
+							</select>
+						</input>
+					</td>
+				</tr>
+				<tr>	
+					<td colspan="2">
+					</td>
+				</tr>
+				<tr>	
+					<td colspan="2">
+					</td>
+				</tr>
+				<tr>
+					<td class="direita">
+						<h3 for="descricao" >Descrição do jogo: </h3>
+					</td>
+					<td>
+						<textarea name="descricao" id="descricao" cols="30" rows="4" placeholder="Digite aqui..." ></textarea>
 					</td>
 				</tr>
 				<tr>
